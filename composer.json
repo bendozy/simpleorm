@@ -1,0 +1,20 @@
+{
+    "name": "bendozy/orm",
+    "description": "A simple agnostic php ORM",
+    "authors": [
+        {
+            "name": "Chidozie Ijeomah",
+            "email": "chidozie.ijeomah@andela.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+
+
+    "autoload": {
+        "psr-4":{
+            "Bendozy\\ORM\\": "src"
+        }
+    }
+}
