@@ -5,6 +5,7 @@
     "keywords": [
         "orm", "database", "persistence", "sql", "php"
     ],
+    "homepage": "https://github.com/andela-cijeomah/simpleorm",
     "authors": [
         {
             "name": "Chidozie Ijeomah",
