@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Bendozy\ORM;
+namespace Bendozy\ORM\Helper;
 
 class Pluralize
 {

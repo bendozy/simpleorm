@@ -2,6 +2,7 @@
 
 namespace Bendozy\ORM;
 
+use Bendozy\ORM\Base\Model;
 
 class User extends Model
 {
