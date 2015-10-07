@@ -2,7 +2,7 @@
     "name": "bendozy/orm",
     "description": "A simple agnostic php ORM",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "keywords": [
         "orm", "database", "persistence", "sql", "php"
     ],
