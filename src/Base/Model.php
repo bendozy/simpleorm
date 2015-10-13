@@ -220,7 +220,7 @@ abstract class Model
 	 */
 	public function save()
 	{
-		if($this->validate() === false) {
+		if(! $this->validate()) {
 			return false;
 		}
 
@@ -265,7 +265,7 @@ abstract class Model
 			$dbh = Database::getInstance();
 			$stmt = $dbh->prepare($sql);
 			foreach($this->properties as $key => $value){
-				$stmt->bindParam(':' . $key, $value);
+				$stmt->bindValue(':' . $key, $value);
 			}
 			return $stmt->execute();
 		} catch(PDOException $e) {

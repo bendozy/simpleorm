@@ -23,7 +23,7 @@ composer require bendozy/orm
 
 #usage
 
-- Save a model in the database
+- Save a record in the database
 
 ````````
 $user = new User();
@@ -32,7 +32,7 @@ $user->password = "password";
 $user->email = "Marcus@andela.com";
 $user->save();
 `````````
-- Find a model
+- Find a record
 
 ``````
 $user = User::find($id);
@@ -52,7 +52,7 @@ $user->save();
 $result = User::destroy($id):
 ````````
 
-- Find a model based on column value
+- Find a record based on column value
 
 ```````
 $user = User::where('username', 'john');

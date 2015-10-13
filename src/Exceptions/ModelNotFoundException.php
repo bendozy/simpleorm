@@ -17,7 +17,7 @@ use Exception;
  *
  * @package Bendozy\ORM\Exceptions
  *
- * @authour Chidozie Ijeomah
+ * @author Chidozie Ijeomah
  */
 class ModelNotFoundException extends Exception
 {
@@ -25,6 +25,7 @@ class ModelNotFoundException extends Exception
 	 * @var string
 	 */
 	protected $message;
+
 	/**
 	 * @param string $message
 	 */
@@ -32,6 +33,7 @@ class ModelNotFoundException extends Exception
 	{
 		$this->message = $message;
 	}
+
 	/**
 	 * @method getExceptionMessage
 	 *
