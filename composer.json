@@ -39,7 +39,8 @@
             "tests/"
         ],
         "psr-4": {
-            "Bendozy\\ORM\\Tests\\": "tests/"
+            "Bendozy\\ORM\\Tests\\": "tests/",
+            "Bendozy\\ORM\\Tests\\Stub\\": "tests/stub/"
         }
     },
     "scripts": {

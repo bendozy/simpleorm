@@ -39,7 +39,7 @@ Class Database
 		} // Catch any errors
 		catch(PDOException $e) {
 			self::$error = $e->getMessage();
-			return null;
+			return self::$error;
 		}
 
 	}

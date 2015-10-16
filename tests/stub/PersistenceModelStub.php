@@ -6,7 +6,7 @@
  * Time: 9:13 PM
  */
 
-namespace Bendozy\ORM\Test;
+namespace Bendozy\ORM\Tests\Stub;
 
 use Bendozy\ORM\Base\Model;
 

@@ -78,7 +78,12 @@ abstract class Model
 	 */
 	public static function getTableName()
 	{
-		return Pluralize::pluralize(self::getClassName());
+		$splitter = new Splitter(self::getClassName());
+
+		$tableName = $splitter->format();
+		$tableName = Pluralize::pluralize($tableName);
+
+		return $tableName;
 	}
 
 	/**
@@ -225,12 +230,10 @@ abstract class Model
 		}
 
 		if($this->exists()) {
-			$run = $this->executeUpdateQuery();
+			return $this->executeUpdateQuery();
 		} else{
-			$run = $this->executeInsertQuery();
+			return $run = $this->executeInsertQuery();
 		}
-
-		return $run;
 	}
 
 	/**
