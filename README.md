@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/andela-cijeomah/simpleorm.svg?branch=master)](https://travis-ci.org/andela-cijeomah/simpleorm)
+
 #Simple ORM
 A simple lightweight php Object Relational Mapper(ORM) done according to the 
 [The PHP League way](https://thephpleague.com/)
