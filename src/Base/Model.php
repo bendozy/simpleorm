@@ -2,10 +2,11 @@
 
 namespace Bendozy\ORM\Base;
 
+use PDO;
+use Bendozy\ORM\Helper\Splitter;
+use Bendozy\ORM\Helper\Pluralize;
 use Bendozy\ORM\Connection\Database;
 use Bendozy\ORM\Exceptions\ModelNotFoundException;
-use Bendozy\ORM\Helper\Pluralize;
-use PDO;
 
 abstract class Model
 {
@@ -232,7 +233,7 @@ abstract class Model
 		if($this->exists()) {
 			return $this->executeUpdateQuery();
 		} else{
-			return $run = $this->executeInsertQuery();
+			return $this->executeInsertQuery();
 		}
 	}
 
