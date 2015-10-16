@@ -10,7 +10,7 @@ class Enviroment extends Dotenv {
 
 	public function __construct()
 	{
-		$this->dotEnv = parent::__construct(__DIR__.'/../');
+		$this->dotEnv = parent::__construct($_SERVER['DOCUMENT_ROOT']);
 	}
 	public function loadEnv()
 	{
