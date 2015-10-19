@@ -50,9 +50,11 @@ Class Database
 	 */
 	public static function loadEnvironment()
 	{
-		self::$dotEnv = new Enviroment();
-		self::$dotEnv->loadEnv();
 
+		self::$dotEnv = new Enviroment();
+		if(! getenv('APP_ENV')){
+			self::$dotEnv->loadEnv();
+		}
 		self::$host = getenv('DB_HOST');
 		self::$user = getenv('DB_USER');
 		self::$pass = getenv('DB_PASS');
