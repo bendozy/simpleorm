@@ -17,7 +17,6 @@ class PluralizeTest extends \PHPUnit_Framework_TestCase {
 	public function testPluraize()
 	{
 		$this->assertEquals(Pluralize::pluralize('user'), 'users');
-		$this->assertEquals(Pluralize::pluralize('chair'), 'chairs');
 	}
 
 }
